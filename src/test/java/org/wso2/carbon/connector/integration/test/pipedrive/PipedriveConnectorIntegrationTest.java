@@ -55,7 +55,7 @@ public class PipedriveConnectorIntegrationTest extends ConnectorIntegrationTestB
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("pipedrive-connector-1.0.0");
+        init("pipedrive-connector-1.0.1-SNAPSHOT");
         esbRequestHeadersMap = new HashMap<String, String>();
         apiRequestHeadersMap = new HashMap<String, String>();
 
