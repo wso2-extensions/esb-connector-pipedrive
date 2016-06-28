@@ -885,7 +885,7 @@ public class PipedriveConnectorIntegrationTest extends ConnectorIntegrationTestB
 
         JSONArray apiJSONData = apiRestResponse.getBody().getJSONArray("data");
 
-        Assert.assertEquals(esbJSONData.get(0), apiJSONData.get(0));
+        Assert.assertEquals(esbJSONData.get(0).toString(), apiJSONData.get(0).toString());
         Assert.assertEquals(esbJSONData.length(), apiJSONData.length());
     }
 
