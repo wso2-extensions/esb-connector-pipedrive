@@ -68,7 +68,7 @@
                     }
                     if (fieldsList != '') {
                         //Remove unwanted comma at the end
-                        fieldsList = ':(' + fieldsList.substring(0, fieldsList.length - 1) + ')';
+                        fieldsList = ':(' + fieldsList.toString().substring(0, fieldsList.toString().lastIndexOf(",")) + ')';
                         mc.setProperty('uri.var.filter', fieldsList);
                     }
                 }

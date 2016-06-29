@@ -55,7 +55,7 @@ public class PipedriveConnectorIntegrationTest extends ConnectorIntegrationTestB
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("pipedrive-connector-1.0.1-SNAPSHOT");
+        init("pipedrive-connector-1.0.1");
         esbRequestHeadersMap = new HashMap<String, String>();
         apiRequestHeadersMap = new HashMap<String, String>();
 
@@ -885,7 +885,7 @@ public class PipedriveConnectorIntegrationTest extends ConnectorIntegrationTestB
 
         JSONArray apiJSONData = apiRestResponse.getBody().getJSONArray("data");
 
-        Assert.assertEquals(esbJSONData.get(0), apiJSONData.get(0));
+        Assert.assertEquals(esbJSONData.get(0).toString(), apiJSONData.get(0).toString());
         Assert.assertEquals(esbJSONData.length(), apiJSONData.length());
     }
 
