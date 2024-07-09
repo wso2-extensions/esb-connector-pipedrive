@@ -4,7 +4,7 @@
     "category": "Customer Relationship Management",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/Pipedrive+Connector",
     "description": "The Pipedrive connector allows you to access the Pipedrive REST API through the WSO2 ESB.Pipedrive is a sales management tool that features a user-friendly sales pipeline from start to end with extensive customization options.",
-    "status": "Unsupported",
+    "status": "Active",
     "labels": [
         "connector"
     ],
